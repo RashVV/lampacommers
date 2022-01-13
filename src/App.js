@@ -10,8 +10,8 @@ const App = () => {
     const [mobileOpen, setMobileOpen] = React.useState(false);
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState({});
-    const [order, setOrder] = useState({});
-    const [errorMessage, setErrorMessage] = useState('');
+    /*const [order, setOrder] = useState({});
+    const [errorMessage, setErrorMessage] = useState('');*/
 
     const fetchProducts = async () => {
         const { data } = await commerce.products.list();
@@ -47,13 +47,13 @@ const App = () => {
         setCart(response.cart);
       };
 
-      const refreshCart = async () => {
+     /* const refreshCart = async () => {
         const newCart = await commerce.cart.refresh();
     
         setCart(newCart);
-      };
+      };*/
 
-      const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
+      /*const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
         try {
           const incomingOrder = await commerce.checkout.capture(checkoutTokenId, newOrder);
     
@@ -63,7 +63,7 @@ const App = () => {
         } catch (error) {
           setErrorMessage(error.data.error.message);
         }
-      };
+      };*/
 
 
     useEffect(() => {
