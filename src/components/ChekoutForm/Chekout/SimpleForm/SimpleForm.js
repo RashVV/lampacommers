@@ -18,10 +18,7 @@ const SimpleForm = (props) => {
       <div>
         <div>
           <Field
-            name="SURNAME"
-            component="input"
-            type="text"
-            placeholder="SURNAME"
+            name="SURNAME" component="input" type="text" placeholder="SURNAME"
           />
         </div>
       </div>
@@ -29,10 +26,7 @@ const SimpleForm = (props) => {
       <div>
         <div>
           <Field
-            name="ADDRESS"
-            component="input"
-            type="adress"
-            placeholder="ADDRESS"
+            name="ADDRESS" component="input" type="adress" placeholder="ADDRESS"
           />
         </div>
       </div>
